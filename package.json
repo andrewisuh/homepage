@@ -9,7 +9,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier -w .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@artsy/fresnel": "^6.1.0",
@@ -20,6 +22,7 @@
     "date-fns": "^2.30.0",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
+    "eslint-config-prettier": "^8.9.0",
     "gray-matter": "^4.0.3",
     "hast-util-has-property": "^2.0.1",
     "hast-util-heading-rank": "^2.1.1",
@@ -46,6 +49,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
     "postcss": "^8.4.27",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
@@ -55,6 +60,14 @@
     "trailingComma": "all",
     "tabWidth": 2,
     "semi": true,
-    "singleQuote": true
+    "singleQuote": true,
+    "printWidth": 88
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": "prettier --write"
   }
 }

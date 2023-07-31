@@ -10,20 +10,16 @@ import { DOMAIN } from '../../util/constants';
 
 type Props = {
   posts: [PostData];
-  tags: [string];
 };
 
-export default function Blog({ posts, tags }: Props) {
+export default function Blog({ posts }: Props) {
   const [activeTags, setActiveTags] = useState<string[]>([]);
 
   const router = useRouter();
   useEffect(() => {
     const query_tag = router.query.tag?.toString();
 
-    if (
-      query_tag !== undefined &&
-      activeTags.toString() !== [query_tag].toString()
-    ) {
+    if (query_tag !== undefined && activeTags.toString() !== [query_tag].toString()) {
       setActiveTags([query_tag]);
     }
     // have to disable this error because if I do as eslint wants this doesn't work
@@ -33,8 +29,7 @@ export default function Blog({ posts, tags }: Props) {
   const filterPosts = (posts: PostData[]) => {
     const results = posts.filter(
       (post) =>
-        activeTags.length == 0 ||
-        activeTags.every((t) => post.tags.includes(t)),
+        activeTags.length == 0 || activeTags.every((t) => post.tags.includes(t)),
     );
     return results;
   };
@@ -86,7 +81,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       posts: allPosts.map((post) => post.metadata),
-      tags: [...new Set(allPosts.map((post) => post.metadata.tags).flat(1))],
+      // tags: [...new Set(allPosts.map((post) => post.metadata.tags).flat(1))],
     },
   };
 };

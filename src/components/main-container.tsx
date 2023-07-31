@@ -28,7 +28,7 @@ const MainContainer = (props: PropsWithChildren<Props>) => {
               }rem) translateY(1rem) rotate(90deg)`,
             }}
           >
-            JOINEMM
+            Andrew Suh
           </p>
         </Media>
         <div className={'mt-2 flex-grow ' + (props.classname ? props.classname : '')}>

@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>ABOUT | joinemm.dev</title>
+        <title>ABOUT | Drew</title>
       </Head>
       <MainContainer classname="border-t-2">
         <div className="mt-3">
@@ -16,7 +16,7 @@ export default function About() {
             <Image src={me} alt="me" style={{ objectFit: 'cover' }} />
           </span>
           <h1 className="mt-0 serif text-4xl">Hello there,</h1>
-          <p>I&apos;m Joonas! a Software Engineer from Finland.</p>
+          <p>I am Andrew!</p>
           <p>
             I specialize in the backend and Linux side of things, but as an artist I
             also enjoy frontend design work. My favourite language is Python.

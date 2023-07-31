@@ -17,7 +17,7 @@ const Header = () => {
           <Link className="min-w-0 no-underline" href={prevPath}>
             {prevPath === '/' ? (
               <div className="flex items-center">
-                <p className="serif m-0 text-2xl tracking-widest">JOINEMM</p>
+                <p className="serif m-0 text-2xl tracking-widest">Andrew Suh</p>
                 <p className="m-0 pl-2">~{basePath}</p>
               </div>
             ) : (

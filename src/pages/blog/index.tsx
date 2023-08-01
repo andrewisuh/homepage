@@ -55,7 +55,7 @@ export default function Blog({ posts }: Props) {
   return (
     <>
       <NextSeo
-        title="BLOG | Joinemm.dev"
+        title="BLOG | Drew I. Suh"
         description="List of my blog posts"
         canonical={DOMAIN + router.asPath}
       />

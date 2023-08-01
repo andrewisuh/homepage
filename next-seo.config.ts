@@ -2,11 +2,11 @@ import { DefaultSeoProps } from 'next-seo';
 import { DOMAIN } from './src/util/constants';
 
 const config: DefaultSeoProps = {
-  title: 'Joinemm.dev',
+  title: 'Drew I. Suh',
   description: 'Personal website and blog',
   canonical: DOMAIN,
   openGraph: {
-    title: 'Joinemm.dev',
+    title: 'Drew I. Suh',
     description: 'Personal website and blog',
     type: 'website',
     locale: 'en_US',
@@ -14,12 +14,12 @@ const config: DefaultSeoProps = {
     images: [
       {
         url: `${DOMAIN}/assets/content/lego-workers.jpg`,
-        alt: 'Joinemm.dev',
+        alt: 'Drew I. Suh',
       },
     ],
   },
   twitter: {
-    handle: '@joinemm',
+    handle: '@andrewisuh',
     cardType: 'summary_large_image',
   },
 };

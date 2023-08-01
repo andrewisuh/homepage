@@ -30,14 +30,14 @@ export default function Post({ metadata, mdxSerialized, toc }: Props) {
       <ArticleJsonLd
         type="BlogPosting"
         url={`${DOMAIN}/blog/${metadata.slug}`}
-        title="Joinemm's Blog"
+        title="Drew's Blog"
         images={[DOMAIN + metadata.image]}
         datePublished={metadata.date}
-        authorName="Joinemm"
+        authorName="Drew"
         description="Welcome to my blog where I dump things from my brain."
       />
       <NextSeo
-        title={`${metadata.title} | Joinemm.dev`}
+        title={`${metadata.title} | Drew`}
         description={metadata.excerpt}
         canonical={DOMAIN + router.asPath}
         openGraph={{

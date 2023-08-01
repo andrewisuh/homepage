@@ -40,8 +40,8 @@ const sortingMethods = [
   },
 ] as { key: SortingMethod; label: string }[];
 
-const TITLE = 'REVIEWS | Joinemm.dev';
-const DESCRIPTION = "Reviewing some random movies i've seen.";
+const TITLE = 'REVIEWS | Drew I. Suh';
+const DESCRIPTION = "Reviewing some random books I've read.";
 
 const sortReviews = (
   reviews: ExtendedReview[],

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Email from '../../components/encoded-email';
 import MainContainer from '../../components/main-container';
 import Image from 'next/image';
-import me from '/public/assets/me.jpg';
+import me from '/public/assets/profile.jpeg';
 
 export default function About() {
   return (
